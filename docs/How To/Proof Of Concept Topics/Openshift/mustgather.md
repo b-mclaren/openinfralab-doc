@@ -1,6 +1,6 @@
 # The must-gather Tool 
 
-Link to our [documentation](https://docs.openshift.com/container-platform/4.17/support/gathering-cluster-data.html#gathering-data-specific-features_gathering-cluster-data)
+Link to our [documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/support/gathering-cluster-data#gathering-cluster-data)
 
 
 When opening a support case for OSV, run the following must-gathers:
