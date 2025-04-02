@@ -2,6 +2,9 @@
 
 ## Encryption in Transit
 
+Legacy v1 and the new, v2 compatible Ceph clients connect to the MON daemons.  Messenger v2 uses port 3300 and v1 uses port 6789.  Both are enabled by default.
+
+
 The msgr2 protocol supports two connection modes:
 
 * crc
