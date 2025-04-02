@@ -2,8 +2,6 @@
 
 * IOPS - HDDs are in the range of 50-200; SSDs are thousands to hundreds of thousands; NVMe are some hundreds of thousands. 
 * Throughput - HDDs around 150Mb/s; SSDs are ~500Mb/s; NVMe are ~2,000Mb/s.  
-
-
 * Tune the BlueStore back end used by OSDs
 * Adjust the schedule for automatic data scrubbing and deep scrubbing
 * Adjust the schedule of asynchronous snapshot trimming (snapshot cleanup)
@@ -17,6 +15,19 @@
 [RHCS Bluestore performance Scalability ( 3 vs 5 nodes )](https://ceph.com/community/part-3-rhcs-bluestore-performance-scalability-3-vs-5-nodes/)  
 [RHCS 3.2 Bluestore Advanced Performance Investigation](https://ceph.io/en/news/blog/2019/part-4-rhcs-3-2-bluestore-advanced-performance-investigation/)  
   
+
+## Tuned Profiles
+
+List all profiles and current|active|recommended|verify
+```
+tuned-adm list|active|recommend|verify
+```
+
+Set:
+```
+tuned-adm profile <profileName>
+```
+
 
 ## Recovery and Backfill
 

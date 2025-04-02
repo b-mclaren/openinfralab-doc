@@ -85,7 +85,6 @@ Standard roles have been pre-defined, but since we are using OpenStack to manage
         
 2. Go to the *Compute->Instances* tab and make sure all of your requested nodes have been created.  Take note of the IP addresses for the VLAN1117 network.  You will use the 172.20.17.*X* addresses to access the servers.  
  
-
 <img src="/images/ceph-instancelist.png" alt="drawing" width="750"/>
   
 3. Start each instance; In the *Actions* colume, select *Start Instance* for each node in the cluster.  
