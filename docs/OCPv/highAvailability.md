@@ -2,7 +2,7 @@
 
 Hypervisors
 
-* Baremetal - executes on the host's hardware as a lyaer of a lightweight operating system.  
+* Baremetal - executes on the host's hardware as a layer of a lightweight operating system.  
 * Hosted Hypervisor - executes on the host's operating system; allowing you to use the host for purposes other than virtualization.
 
 Kubernetes Features for VMs
@@ -164,6 +164,9 @@ spec:
 > 1. OCPv can only emulate the Intel 6300ESB chipset.  
 2. The `action` parameter can be set to poweroff, reset, or shutdown.
 
+To trigger the watchdog time, on the VM execute `cat >> /dev/watchdog`
+
+
 ## Machine Health Checks
 
 Limitations:
@@ -175,3 +178,9 @@ Limitations:
 * A host is remediated immediately if the Machine resource enters a Failed status.
 * For cloud environments, a machine health check relies on cloud provider integration for the machine to forcibly reboot, reprovision, and rejoin the cluster.
 
+
+## Node Health Checks
+
+https://www.redhat.com/en/blog/a-guide-to-downtime-minimization-for-stateful-applications
+
+https://access.redhat.com/articles/7057929
